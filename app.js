@@ -84,7 +84,7 @@ function main(event) {
 function show() {
     program.innerHTML = data.event.meeting
     program.hidden = false
-}
+} 
 
 form.addEventListener('submit', main)
 showProgram.addEventListener('click', show)
