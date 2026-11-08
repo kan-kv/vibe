@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f5f3ff;
+  color: #1f1b2d;
+  font-family: Arial, sans-serif;
+}
+
+.page { width: 680px; margin: 48px auto; }
+.label { color: #6d28d9; font-weight: 700; }
+.card { display: grid; gap: 12px; padding: 20px; border: 2px solid #c4b5fd; }
+.route-list { display: grid; gap: 10px; padding: 0; list-style: none; }
+.route-item { padding: 14px; border: 2px solid #c4b5fd; cursor: pointer; }
+.route-item.ready { border-color: #6d28d9; }
+.route-item.visited { background: #dcfce7; text-decoration: line-through; }
+button, input { width: max-content; padding: 10px 14px; }

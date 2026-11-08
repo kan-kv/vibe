@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.grid > div {
+  padding: 20px;
+  background: #a8dfd3;
+}
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

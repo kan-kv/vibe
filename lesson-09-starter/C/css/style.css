@@ -1,0 +1,13 @@
+.menu {
+}
+.cards {
+}
+.cards article {
+  background: #c4b5fd;
+  padding: 16px;
+}
+/* Замените 0px на нужную границу. */
+@media (max-width: 0px) {
+  .cards {
+  }
+}

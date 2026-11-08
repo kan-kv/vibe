@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.flex {
+  display: flex;
+  gap: 24px;
+  background: #dfecf0;
+}
+.flex > div {
+  padding: 12px;
+  background: #7ccbb8;
+}
+.flex {
+  width: 340px;
+  flex-wrap: wrap;
+}
+.flex > div {
+  width: 120px;
+}

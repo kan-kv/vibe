@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.flex {
+  display: flex;
+  gap: 24px;
+  background: #dfecf0;
+}
+.flex > div {
+  padding: 12px;
+  background: #7ccbb8;
+}
+.flex {
+  height: 180px;
+  justify-content: space-between;
+  align-items: center;
+}

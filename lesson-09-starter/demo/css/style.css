@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #253047;
+  background: #f3f4f6;
+}
+article,
+section {
+  padding: 16px;
+  background: white;
+}

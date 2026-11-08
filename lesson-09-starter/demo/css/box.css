@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.box {
+  width: 240px;
+  padding: 16px;
+  border: 2px solid #295a72;
+  box-sizing: content-box;
+  background: #d4f1f4;
+}

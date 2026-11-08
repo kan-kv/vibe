@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.notice {
+  background: #c4b5fd;
+}
+.notice--warning {
+  background: #f97316;
+}
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid #333;
+  box-sizing: content-box;
+}
+.menu {
+  display: block;
+  gap: 16px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.grid > div {
+  background: #c4b5fd;
+}
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

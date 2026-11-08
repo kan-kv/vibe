@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Маршрут выходного дня</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page">
+      <p class="label">План прогулки</p>
+      <h1>Маршрут выходного дня</h1>
+      <p id="message">В маршруте две остановки.</p>
+      <p id="route-hint" hidden>Остановки можно отмечать посещёнными.</p>
+
+      <form id="route-form" class="card">
+        <label for="place">Новая остановка</label>
+        <input id="place" name="place" value="Выставка">
+        <label>
+          <input id="with-guide" type="checkbox" name="withGuide">
+          Добавить гида
+        </label>
+        <button type="submit">Добавить в маршрут</button>
+      </form>
+
+      <ul id="route-list" class="route-list">
+        <li class="route-item">Кофейня · без гида</li>
+        <li class="route-item">Музей · с гидом</li>
+      </ul>
+
+      <button id="clear-button" type="button">Очистить маршрут</button>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
