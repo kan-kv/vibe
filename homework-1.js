@@ -2,15 +2,21 @@ const readline = require('node:readline/promises')
 
 function printTicketResult(category, budget) {
     const price = ticketPrice(category)
+    
+    if (price === 0) {
+        console.log(`Неизвестная категория`)
+        }
+        else
+    {
     const qty = maxTickets(budget, price)
     console.log(`Категория билета: ${category}`)
     console.log(`Бюджет: ${budget}`)
-    console.log(`Категория ${category}, билет ${price} руб., бюджет ${budget} руб.: можно купить ${qty} шт.`)
+    console.log(`Категория ${category}, билет ${price} руб., бюджет ${budget} руб.: можно купить ${qty} шт.`)}
 }
 
 function maxTickets(budget, price) {
     let i = 0
-        while (price * (i + 1) < budget) {
+        while (price * (i + 1) <= budget) {
             i = i + 1
     }
     return i
@@ -37,8 +43,8 @@ function ticketPrice(category) {
             break
         }
         default:
-        const price = 900
-        console.log(`Цена билета: ${price}`)
+        const price = 0
+        return price
     }
 }
 
@@ -78,7 +84,7 @@ function deliveryPrice(distance, total) {
 
 function printSteps(height) {
     let k = 0
-    for(let i = 1; i < height; i = i + 1) {
+    for(let i = 1; i <= height; i = i + 1) {
         if (i === 4) {
             continue
         }
@@ -106,7 +112,7 @@ async function main() {
 
   switch (action) {
     case 1: {
-      const category = Number(await rl.question('Введите категорию: '))
+      const category = Number(await rl.question('Категория билета '))
       const budget = Number(await rl.question('Введите бюджет: '))
       printTicketResult(category, budget)
       break
@@ -118,7 +124,7 @@ async function main() {
       break
     }
     case 3: {
-      const height = Number(await rl.question('Введите количество ступеней: '))
+      const height = Number(await rl.question('Высота лестницы '))
       printSteps(height)
       break
     }
